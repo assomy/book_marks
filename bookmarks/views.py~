@@ -29,7 +29,7 @@ def user_page(request, username):
   return HttpResponse(output)
 
 def logout_page(request):
-    logout(request)
-    return HttpResponseRedirect('/')
+  logout(request)
+  return HttpResponseRedirect('/')
 
 

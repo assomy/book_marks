@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from django.views.decorators.csrf import csrf_protect
+from django.template import RequestContext
 class Link(models.Model):
   url = models.URLField()
 
